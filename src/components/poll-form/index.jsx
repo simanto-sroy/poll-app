@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react"
 import shortid from 'shortid';
 
-import MyForm from './form'
+import MyForm from "./form"
 
 const defaultOptions = [
     {id: shortid.generate(), value: '', vote: 0},

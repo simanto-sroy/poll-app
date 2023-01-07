@@ -1,7 +1,7 @@
 const polls = [
     {
         id: '1',
-        title: 'What is Your Favorite Programmin Language',
+        title: 'What is Your Favorite Programming Language',
         description: 'There are lot of popular programming languages available. Among them wha is your favorite?',
         options: [
             { id: '12123', value: 'C Programming', vote: 0},

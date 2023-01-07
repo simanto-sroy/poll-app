@@ -2,8 +2,8 @@ import React from 'react';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 
 const PollLists = props => {
-    if(props.polls.length === 0) {
-        return "There is no poll"
+    if(props.polls.length === 0){
+        return <p>There is no Polls</p>
     }
 
     return (
@@ -11,14 +11,14 @@ const PollLists = props => {
             {props.polls.map(poll => (
                 <ListGroupItem
                     key={poll.id}
-                    onClick={()=>props.selectedPoll(poll.id)}
-                    style={{cursor: 'pointer'}}
+                    onClick={()=> props.selectPoll(poll.id)}
+                    style={{cursor: "pointer"}}
                 >
-                    {poll.title.length > 30 ? poll.title.substr(0, 30) + '...' : poll.title}
-                </ListGroupItem>    
+                    {poll.title.length > 30 ? poll.title.substr(0, 30) + "..." : poll.title}
+                </ListGroupItem>
             ))}
         </ListGroup>
-    );
+    )
 }
 
 export default PollLists;
