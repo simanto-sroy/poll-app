@@ -1,7 +1,8 @@
 import React from 'react';
 import {Modal, ModalHeader, ModalBody} from 'reactstrap';
-import ParticipateFrom from './participate-form';
 import PollForm from '../poll-form';
+import ParticipateFrom from './participate-form';
+
 
 class MainContent extends React.Component {
 

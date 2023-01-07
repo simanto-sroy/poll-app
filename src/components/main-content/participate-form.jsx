@@ -77,7 +77,7 @@ class ParticipateFrom extends React.Component {
                     </Button>
                 </div>
                 {
-                    this.props.poll.options.map(opt => {
+                    this.props.poll.options && this.props.poll.options.map(opt => {
                         return (
                             <FormGroup className="my-2" key={opt.id}>
                                 <Label className="d-flex">
